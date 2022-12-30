@@ -1,7 +1,4 @@
 spring:
   data:
     mongodb:
-      host: 127.0.0.1
-      port: 27017
-      database: mydb
-
+      uri: mongodb+srv://dbUser:mLaa3NfNAlaQrsh9@mycluster.dl6bkwj.mongodb.net/test?retryWrites=true&w=majority
