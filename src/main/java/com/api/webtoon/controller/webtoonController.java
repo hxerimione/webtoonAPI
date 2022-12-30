@@ -10,7 +10,6 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -37,11 +36,7 @@ public class webtoonController {
         }
     }
     @GetMapping("/search")
-    public Page<Webtoon> searchWebtoon(@PageableDefault(sort = {"_id"},direction = Sort.Direction.ASC)Pageable pageable,
-                                       @RequestParam String keyword){
-        return service.findWebtoonBySearchKeyword(pageable.getPageNumber(), pageable.getPageSize(), keyword);
+    public List<Webtoon> searchWebtoon(@RequestParam String keyword){
+        return service.findWebtoonBySearchKeyword(keyword);
     }
-
-
-
 }

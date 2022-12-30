@@ -11,13 +11,11 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Repository
-@Transactional(readOnly = true)
 public interface webtoonRepo extends MongoRepository<Webtoon,Long> {
-    List<Webtoon> findByTitle(String title);
     Page<Webtoon> findByPlatformAndDayLike(Pageable pageable,String platform,String day);
     Page<Webtoon> findByPlatform(Pageable pageable,String platform);
     Page<Webtoon> findByDayLike(Pageable pageable, String day);
     Page<Webtoon> findAll(Pageable pageable);
-    Page<Webtoon> findBySearchKeywordLike(Pageable pageable, String keyword);
+    List<Webtoon> findBySearchKeywordLike(String keyword);
 
 }

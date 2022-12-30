@@ -9,7 +9,6 @@ import org.springframework.stereotype.Component;
 
 
 @Getter
-@Setter
 @Document(collection = "myCol")
 public class Webtoon {
     @Id
@@ -23,7 +22,6 @@ public class Webtoon {
     private String url;
 
     @Builder
-
     public Webtoon(Long _id, String author, String[] day, String img, String platform, String searchKeyword, String title, String url) {
         this._id = _id;
         this.author = author;
