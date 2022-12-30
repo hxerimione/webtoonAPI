@@ -4,4 +4,4 @@ spring:
       uri: mongodb+srv://dbUser:mLaa3NfNAlaQrsh9@mycluster.dl6bkwj.mongodb.net/test?retryWrites=true&w=majority
       database: mydb
 server:
-  port: 8080
+  port: $PORT
