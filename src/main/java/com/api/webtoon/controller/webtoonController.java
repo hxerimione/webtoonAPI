@@ -20,6 +20,10 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class webtoonController {
     private final webtoonService service;
+    @GetMapping("/hello")
+    public String indexController(){
+        return "hello";
+    }
     @GetMapping("/")
     public Page<Webtoon> findWebtoon(@PageableDefault(sort = {"_id"},direction = Sort.Direction.ASC)Pageable pageable,
                                      @RequestParam(required = false) String platform,
