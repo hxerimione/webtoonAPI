@@ -1,10 +1,13 @@
-# webtoonAPI
-📍네이버 카카오 웹툰 정보 제공하는 API📖
+# **WebtoonAPI**
+### 📍네이버 카카오 웹툰 정보 제공하는 API📖
 
+![Python](https://img.shields.io/badge/python-3776AB?style=flat-square&logo=python&logoColor=white)&nbsp;&nbsp;&nbsp;![Java](https://img.shields.io/badge/Java-red?style=flat-square&logo=Java&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=MongoDB&logoColor=white) ![SPRINGBOOT](https://img.shields.io/badge/SpringBoot-47A248?style=flat-square&logo=springboot&logoColor=white) ![HEROKU](https://img.shields.io/badge/Heroku-430098?style=flat-square&logo=Heroku&logoColor=white)
+
+### **📝개발 기록**
 https://hxerimione.notion.site/API-038723a0126c4abf87701beb440cc207
-![header](https://capsule-render.vercel.app/api?type=rect&color=gradient&height=100&section=header&text=Korea%20Webtoon%20API&fontSize=40&fontAlign=50&fontAlignY=50)
 
-![NODE](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=Node.js&logoColor=white)&nbsp;&nbsp;&nbsp;![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=NestJS&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=MongoDB&logoColor=white) ![TYPESCRIPT](https://img.shields.io/badge/Typescript-3178c6?style=flat-square&logo=typescript&logoColor=white) ![HEROKU](https://img.shields.io/badge/Heroku-430098?style=flat-square&logo=Heroku&logoColor=white)
+
+
 
 # **📌 About**
 웹툰 정보를 제공합니다.
@@ -106,45 +109,33 @@ https://hxerimione.notion.site/API-038723a0126c4abf87701beb440cc207
 
 ### Response Sample
 
-**https://webtoon-api.herokuapp.com/search?keyword=%ED%98%B8%EB%9E%91%EC%9D%B4**
+**https://webtoon-api.herokuapp.com/search?keyword=%EC%8B%9D%EC%8A%A4%EC%84%BC%EC%8A%A4**
 
 ```json
 [
     {
-        "_id": 10108,
-        "author": "배세혁 / 유은",
-        "day": [
-            "화"
-        ],
-        "img": "https://shared-comic.pstatic.net/thumb/webtoon/757904/thumbnail/thumbnail_IMAG06_1ac40e6e-83b8-497e-87d4-4ee027275b8f.jpg",
-        "platform": "네이버 웹툰",
-        "searchKeyword": "호랑이들어와요배세혁유은",
-        "title": "호랑이 들어와요",
-        "url": "https://comic.naver.com/webtoon/list?titleId=757904&weekday=tue"
-    },
-    {
-        "_id": 10410,
-        "author": "이상규",
+        "_id": 10459,
+        "author": "조코봉 / 갓녀",
         "day": [
             "토"
         ],
-        "img": "https://shared-comic.pstatic.net/thumb/webtoon/650305/thumbnail/thumbnail_IMAG06_edfcb1ac-e979-4c45-8341-ef1dd37140d1.jpg",
+        "img": "https://shared-comic.pstatic.net/thumb/webtoon/770964/thumbnail/thumbnail_IMAG06_ca279a51-e627-4037-8bdb-65a82d24a908.jpg",
         "platform": "네이버 웹툰",
-        "searchKeyword": "호랑이형님이상규",
-        "title": "호랑이형님",
-        "url": "https://comic.naver.com/webtoon/list?titleId=650305&weekday=sat"
+        "searchKeyword": "키스식스센스조코봉갓녀",
+        "title": "키스 식스 센스",
+        "url": "https://comic.naver.com/webtoon/list?titleId=770964&weekday=sat"
     },
     {
-        "_id": 10524,
-        "author": "아완 / 청라",
+        "_id": 21405,
+        "author": "릴레이연재",
         "day": [
-            "일"
+            "finish"
         ],
-        "img": "https://shared-comic.pstatic.net/thumb/webtoon/802682/thumbnail/thumbnail_IMAG06_05f63a50-c890-4120-ac38-63713a6d92df.jpg",
+        "img": "https://shared-comic.pstatic.net/thumb/webtoon/25517/thumbnail/thumbnail_title_25517_83x90.gif",
         "platform": "네이버 웹툰",
-        "searchKeyword": "여신님의호랑이공략법아완청라",
-        "title": "여신님의 호랑이 공략법",
-        "url": "https://comic.naver.com/webtoon/list?titleId=802682&weekday=sun"
+        "searchKeyword": "식스센스릴레이연재",
+        "title": "식스센스",
+        "url": "https://comic.naver.com/webtoon/list?titleId=25517"
     }
 ]
 ```
@@ -153,25 +144,11 @@ https://hxerimione.notion.site/API-038723a0126c4abf87701beb440cc207
 
 |           Name            | Required |  Type   | Default | Description                                                                                                                                                                                                        |
 | :-----------------------: | :------: | :-----: | :-----: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|   **totalWebtoonCount**   |    Y     | number  |    0    | 전체 웹툰 수                                                                                                                                                                                                       |
-|   **naverWebtoonCount**   |    Y     | number  |    0    | 네이버 웹툰 수                                                                                                                                                                                                     |
-|   **kakaoWebtoonCount**   |    Y     | number  |    0    | 카카오 웹툰 수                                                                                                                                                                                                     |
-| **kakaoPageWebtoonCount** |    Y     | number  |    0    | 카카오 페이지 웹툰 수                                                                                                                                                                                              |
-|      **lastUpdate**       |    N     | string  |  null   | 마지막 갱신 시간                                                                                                                                                                                                   |
-|  **updatedWebtoonCount**  |    Y     | number  |    0    | 마지막 갱신에서 정보가 변경된 웹툰 수                                                                                                                                                                              |
-|  **createdWebtoonCount**  |    Y     | number  |    0    | 마지막 갱신에서 정보가 새롭게 생성된 웹툰 수                                                                                                                                                                       |
-|         **\_id**          |    Y     | string  |    -    | 객체 ID                                                                                                                                                                                                            |
-|       **webtoonId**       |    Y     | number  |    -    | 웹툰 고유 ID                                                                                                                                                                                                       |
+|         **\_id**          |    Y     | string  |    -    | 웹툰 ID                                                                                                                                                                                                     |
 |         **title**         |    Y     | string  |    -    | 웹툰 제목                                                                                                                                                                                                          |
 |        **author**         |    Y     | string  |    -    | 웹툰 작가                                                                                                                                                                                                          |
 |          **url**          |    Y     | string  |    -    | 웹툰 URL                                                                                                                                                                                                           |
 |          **img**          |    Y     | string  |    -    | 웹툰 썸네일 이미지                                                                                                                                                                                                 |
-|        **service**        |    Y     | string  |    -    | 웹툰 공급자<ul><li>`naver` 네이버 웹툰</li><li>`kakao` 카카오 웹툰</li><li>`kakaoPage` 카카오페이지</li></ul>                                                                                                      |
-|      **updateDays**       |    Y     |  array  |    -    | 웹툰 업데이트 구분 목록<ul><li>`mon` 월</li><li>`tue` 화</li><li>`wed` 수</li><li>`thu` 목</li><li>`fri` 금</li><li>`sat` 토</li><li>`sun` 일</li><li>`finished` 완결</li><li>`naverDaily` 네이버 Daily+</li></ul> |
-|       **fanCount**        |    N     | number  |  null   | 웹툰의 팬 수<br/>10,000 단위 이며 10,000 이하일 경우 null                                                                                                                                                          |
-|     **searchKeyword**     |    Y     | string  |    -    | 검색에 사용되는 키워드                                                                                                                                                                                             |
-|          **new**          |    Y     | boolean |  false  | 신규 웹툰 여부                                                                                                                                                                                                     |
-|         **adult**         |    Y     | boolean |  false  | 성인 웹툰 여부                                                                                                                                                                                                     |
-|         **rest**          |    Y     | boolean |  false  | 웹툰 휴재                                                                                                                                                                                                          |
-|          **up**           |    Y     | boolean |  false  | 웹툰 신규 회차 업로드                                                                                                                                                                                              |
-|    **singularityList**    |    Y     |  array  |   []    | 웹툰 기타 정보 리스트<ul><li>`over15` 15세 이상</li><li>`free` 완전 무료</li><li>`waitFree` 기다리면 무료</li></ul>   
+|        **platform**        |    Y     | string  |    -    | 웹툰 공급자<ul><li>`네이버 웹툰` 네이버 웹툰</li></ul>                                                                                                      |
+|      **day**       |    Y     |  array  |    -    | 웹툰 업데이트 구분 목록<ul><li>`월`</li><li>`화`</li><li>`수`</li><li>`목`</li><li>`금`</li><li>`토`</li><li>`일`</li><li>`finish` 완결</li></ul> |
+|     **searchKeyword**     |    Y     | string  |    -    | 검색에 사용되는 키워드                                                                                                                                                                                             | 
