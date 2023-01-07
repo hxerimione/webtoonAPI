@@ -1,7 +1,7 @@
 # **WebtoonAPI**
 ### 📍네이버 카카오 웹툰 정보 제공하는 API📖
 
-![Python](https://img.shields.io/badge/python-3776AB?style=flat-square&logo=python&logoColor=white)&nbsp;&nbsp;&nbsp;![Java](https://img.shields.io/badge/Java-red?style=flat-square&logo=Java&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=MongoDB&logoColor=white) ![SPRINGBOOT](https://img.shields.io/badge/SpringBoot-47A248?style=flat-square&logo=springboot&logoColor=white) ![HEROKU](https://img.shields.io/badge/Heroku-430098?style=flat-square&logo=Heroku&logoColor=white)
+![Python](https://img.shields.io/badge/python-3776AB?style=flat-square&logo=python&logoColor=white)&nbsp;![Java](https://img.shields.io/badge/Java-red?style=flat-square&logo=Java&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=MongoDB&logoColor=white) ![SPRINGBOOT](https://img.shields.io/badge/SpringBoot-47A248?style=flat-square&logo=springboot&logoColor=white) ![HEROKU](https://img.shields.io/badge/Heroku-430098?style=flat-square&logo=Heroku&logoColor=white)
 
 ### **📝개발 기록**
 https://hxerimione.notion.site/API-038723a0126c4abf87701beb440cc207
@@ -18,7 +18,7 @@ https://hxerimione.notion.site/API-038723a0126c4abf87701beb440cc207
 
 ## **웹툰 정보 요청**
 
-조건을 만족하는 웹툰 정보들을 제공합니다.
+조건을 만족하는 웹툰 정보들을 제공합니다. (현재 배포 중지)
 
 | Method |                                     Request URL                                      | Format |
 | :----: | :----------------------------------------------------------------------------------: | :----: |
